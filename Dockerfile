@@ -11,4 +11,4 @@ COPY run.sh /run.sh
 COPY hello-world-war-1.0.0.war /opt/webserver/webapps/
 RUN chown 1001:0 /run.sh ; chmod +x /run.sh
 USER 1001
-CMD [“/run.sh”]
+CMD ["/run.sh"]
