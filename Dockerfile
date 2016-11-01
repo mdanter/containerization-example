@@ -8,7 +8,7 @@ EXPOSE 8080
 VOLUME $LOG_DIR \
        $SECRET_DIR
 COPY run.sh /run.sh
-COPY hello-world-war-1.0.0.war /opt/webserver/webapps/
+COPY hello-world-war-1.0.0.war /opt/webserver/webapps/ROOT.war
 RUN chown 1001:0 /run.sh ; chmod +x /run.sh
 USER 1001
 CMD ["/run.sh"]
